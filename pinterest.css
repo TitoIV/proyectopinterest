@@ -1,0 +1,76 @@
+body{
+    margin: 3em;
+}
+#content {
+margin-top: 5vh;
+columns: 5 320px;
+column-gap: 1em ;
+padding: 60px 20px 20px;
+}
+img{
+    max-width: 100%;
+    display: block;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    max-height: 100%;
+    position: relative;
+}
+nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    width: 80vw;
+    position: -webkit-sticky;
+    top: 0;
+    position: sticky;
+}
+.navf{
+width: 30px;
+height: 30px;
+}
+.finder{
+    grid-area: barra;
+    border-radius: 15px;
+    width:600px ;
+    height:45px ;
+    padding:10px ;
+    font-size:16px ;
+}
+.logo{
+    width: 45px;
+    height: 45px;
+}
+.logo :hover{
+    filter: brightness(80%);
+    cursor: pointer;
+}
+.navf :hover{
+    filter: brightness(10%);
+    cursor: pointer;
+}
+.card-image :hover{
+    filter: brightness(50%);
+    cursor: pointer;
+}
+.finder :hover{
+    cursor: zoom-in;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 480px){
+    .finder{
+        width:0px ;
+        height:0px ; 
+    }
+}
+.boton-superpuesto{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+img:hover .boton-superpuesto{
+    opacity: 1;
+}
